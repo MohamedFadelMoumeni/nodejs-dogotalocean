@@ -38,6 +38,9 @@ const whitelist = [
   app.use(cors());
 
 const PORT = 5000;
+app.get('/', (req, res) => {
+  console.log("Welcome")
+})
 
 app.use('/user', UserRoutes);
 app.use('/login', LoginRoutes);
